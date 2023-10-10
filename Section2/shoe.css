@@ -1,16 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: sans-serif;
+}
+
+article {
   border: solid black 3px;
+  width: 80%;
+  margin: 50px auto;
 }
 
 h1 {
   text-align: center;
   text-transform: uppercase;
+  background-color: lightgray;
+  padding: 20px;
+}
+
+p,
+h3,
+ul,
+li,
+a {
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+.cost {
+  margin-bottom: 0;
 }
 
 .shipping {
   text-transform: uppercase;
   font-size: 12px;
+  margin-bottom: 10px;
 }
 
 a:link {
@@ -32,6 +61,7 @@ h3 {
 
 ul {
   list-style: square;
+  margin: 0 25px;
 }
 
 button {
@@ -39,7 +69,10 @@ button {
   color: white;
   text-transform: uppercase;
   border: none;
+  border-top: solid black 3px;
   cursor: pointer;
+  width: 100%;
+  padding: 10px;
 }
 
 button:hover {
@@ -47,5 +80,6 @@ button:hover {
   color: black;
   text-transform: uppercase;
   border: none;
+  border-top: solid black 3px;
   cursor: pointer;
 }
