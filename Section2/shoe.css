@@ -1,13 +1,14 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: sans-serif;
 }
 
-article {
+.contain {
   border: solid black 3px;
   width: 80%;
   margin: 50px auto;
@@ -136,4 +137,35 @@ button:hover {
   border: none;
   border-top: solid black 3px;
   cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+.division {
+  border: none;
+  width: 30%;
+  float: left;
+  margin-right: 40px;
+}
+
+.last {
+  margin-right: 0;
+  float: right;
+  background-color: orangered;
+}
+
+.money::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.cost {
+  float: left;
+}
+
+.shipping {
+  float: right;
 }
