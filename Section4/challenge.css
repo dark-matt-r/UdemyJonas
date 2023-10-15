@@ -4,10 +4,127 @@
   box-sizing: border-box;
 }
 
+.contain {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid black;
+  position: relative; /* For sale box. */
+  width: 80%;
+}
+
+.sale {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: white;
+  background-color: red;
+  padding: 6px 12px;
+  position: absolute;
+  top: -16px;
+  left: -34px;
+}
+
+h1 {
+  background-color: lightgray;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .divisions {
   display: flex;
+  gap: 10px;
+}
+
+.product-info {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
 }
 
 .total {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shipping {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  color: grey;
+}
+
+.colors {
+  display: flex;
+  justify-content: space-between;
+}
+
+.color-black {
+  width: 16px;
+  height: 16px;
+  background-color: black;
+}
+
+.color-blue {
+  width: 16px;
+  height: 16px;
+  background-color: blue;
+}
+
+.color-red {
+  width: 16px;
+  height: 16px;
+  background-color: red;
+}
+
+.color-yellow {
+  width: 16px;
+  height: 16px;
+  background-color: yellow;
+}
+
+.color-green {
+  width: 16px;
+  height: 16px;
+  background-color: green;
+}
+
+.color-brown {
+  width: 16px;
+  height: 16px;
+  background-color: brown;
+}
+
+ul {
+  list-style: square;
+}
+
+li {
+  margin-left: 15px;
+}
+
+button {
+  color: white;
+  background-color: black;
+  border-top: 3px solid black;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+  border-top: 3px solid black;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
 }
