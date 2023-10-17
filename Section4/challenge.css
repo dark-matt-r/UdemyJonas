@@ -11,6 +11,11 @@
   border: 3px solid black;
   position: relative; /* For sale box. */
   width: 80%;
+
+  /* For grid challenge. */
+  display: grid;
+  column-gap: 40px;
+  grid-template-columns: 250px 1fr 1fr;
 }
 
 .sale {
@@ -29,17 +34,30 @@ h1 {
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
+
+  /* For grid challenge. */
+  grid-column: 1 / -1;
 }
 
+/*
 .divisions {
   display: flex;
   gap: 10px;
+}
+*/
+
+.product-image {
+  /* For grid challenge. */
+  grid-column: 1 / 2;
 }
 
 .product-info {
   display: flex;
   flex-direction: column;
   gap: 15px;
+
+  /* For grid challenge. */
+  grid-column: 2 / 3;
 }
 
 .total {
@@ -99,6 +117,11 @@ h1 {
   background-color: brown;
 }
 
+.product-details {
+  /* For grid challenge. */
+  grid-column: 3 / 4;
+}
+
 ul {
   list-style: square;
 }
@@ -118,6 +141,9 @@ button {
   width: 100%;
   padding: 10px;
   cursor: pointer;
+
+  /* For grid challenge. */
+  grid-column: 1 / -1;
 }
 
 button:hover {
