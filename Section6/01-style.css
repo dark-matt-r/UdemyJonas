@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700&display=swap");
+
+/* ------------------------ */
+/* COLOUR VARIABLES */
+/* ------------------------ */
+:root {
+  --main-color: #087f5b;
+  --grey-color: #343a40;
+  --light-button-color: #099268;
+  --light-text-color: #e6fcf5;
+  --medium-text-color: #c3fae8;
+  --footer-text-color: #495057;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--grey-color);
+}
+
+.accordion {
+  width: 700px;
+  margin: 100px auto;
+  background-color: var(--grey-color);
+}
