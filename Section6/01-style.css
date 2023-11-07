@@ -7,7 +7,7 @@
   --main-color: #087f5b;
   --grey-color: #343a40;
   --light-button-color: #099268;
-  --light-text-color: #e6fcf5;
+  --light-text-color: #868e96;
   --medium-text-color: #c3fae8;
   --footer-text-color: #495057;
 }
@@ -21,10 +21,76 @@
 body {
   font-family: "Inter", sans-serif;
   color: var(--grey-color);
+  line-height: 1;
 }
 
 .accordion {
   width: 700px;
   margin: 100px auto;
-  background-color: var(--grey-color);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.item {
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 24px;
+  row-gap: 32px;
+  align-items: center;
+}
+
+.number,
+.text {
+  font-size: 24px;
+  font-weight: 500;
+  /*   color: var(--main-color);
+ */
+}
+
+.number {
+  color: var(--light-text-color);
+}
+
+.text {
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+  stroke: var(--main-color);
+}
+
+.hidden-box {
+  grid-column: 2;
+  display: none;
+}
+
+.hidden-box p {
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.hidden-box ul {
+  color: var(--light-text-color);
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.open {
+  border-top: 4px solid var(--main-color);
+}
+
+.open .hidden-box {
+  display: block;
+}
+
+.open .number,
+.open .text {
+  color: var(--main-color);
 }
