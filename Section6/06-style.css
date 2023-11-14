@@ -7,7 +7,10 @@
 :root {
   --text-color: #343a40;
   --violet-color: #7048e8;
+  --dark-violet-color: #5f3dc4;
   --light-grey-color: #e9ecef;
+  --mid-grey-color: #adb5db;
+  --pink-color: #d6336c;
 }
 
 body {
@@ -24,7 +27,6 @@ body {
 }
 
 nav,
-menu,
 section,
 main,
 aside {
@@ -36,17 +38,54 @@ nav {
   color: white;
 
   grid-row: 1 / -1;
-  grid-column: 1 / 2;
 }
 
 menu {
   background-color: var(--violet-color);
-  color: white;
   grid-column: 2 / -1;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 40px;
+}
+
+button {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--dark-violet-color);
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 8px 12px;
+
+  display: inline-block;
+}
+
+button:last-child {
+  background-color: var(--pink-color);
+  margin-left: auto;
 }
 
 section {
   background-color: var(--light-grey-color);
+  padding: 40px;
+
+  overflow: scroll;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.email {
+  background-color: var(--mid-grey-color);
+  height: 96px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 aside {
