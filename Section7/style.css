@@ -12,14 +12,21 @@
   /* Primary Colour */
   --primary-orange-color: #e67e22;
 
-  /* Tents */
+  /* Tints */
+  --light-orange-color: #f2f2e9;
 
   /* Shades */
+  --dark-orange-color: #cf711f;
 
   /* Accents */
 
   /* Greys */
   --medium-grey-color: #555;
+  --dark-grey-color: #333;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
@@ -27,4 +34,76 @@ body {
   line-height: 1;
   font-weight: 400;
   color: var(--medium-grey-color);
+}
+
+.section-hero {
+  background-color: var(--light-orange-color);
+  padding: 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.heading-primary {
+  font-size: 5.25rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--dark-grey-color);
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: var(--primary-orange-color);
+  color: white;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: var(--dark-orange-color);
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: white;
+  color: var(--medium-grey-color);
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: var(--light-orange-color);
+  box-shadow: inset 0 0 0 3px white;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem;
 }
