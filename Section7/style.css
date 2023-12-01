@@ -16,6 +16,9 @@
 
   /* Other Colours */
   --light-green-color: #51cf66;
+  --vegetarian-green-color: #51cf66;
+  --vegan-green-color: #94d82d;
+  --paleo-green-color: #ffd43b;
 
   /* Tints */
   --light-orange-color: #f2f2e9;
@@ -386,8 +389,15 @@ strong {
   overflow: hidden;
 }
 
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
 .meal-tags {
   margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
 }
 
 .tag {
@@ -395,9 +405,21 @@ strong {
   padding: 0.4rem 0.8rem;
   font-size: 1.2rem;
   text-transform: uppercase;
-  background-color: var(--light-green-color);
   color: var(--dark-grey-color);
   border-radius: 100px;
+  font-weight: 600;
+}
+
+.tag-vegetarian {
+  background-color: var(--vegetarian-green-color);
+}
+
+.tag-vegan {
+  background-color: var(--vegan-green-color);
+}
+
+.tag-paleo {
+  background-color: var(--paleo-green-color);
 }
 
 .meal-title {
