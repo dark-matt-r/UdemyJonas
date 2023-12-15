@@ -345,6 +345,10 @@ strong {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid-5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .grid-center-v {
   align-items: center;
 }
@@ -742,4 +746,10 @@ strong {
 .cta *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem var(--light-orange-color);
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 9.6rem 0;
 }
