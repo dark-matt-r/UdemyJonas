@@ -21,8 +21,47 @@ allLinks.forEach(function (link) {
     e.preventDefault();
     const href = link.getAttribute("href");
     console.log(href);
+    //Scroll back to top.
+    if (href === "#")
+      window.scrollTo({
+        top: 0,
+        behaviour: "smooth",
+      });
+
+    //Scroll to other links.
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+    //Close Mobile navigation.
+    if (link.classList.contains("main-nav-link"))
+      headerEl.classList.toggle("nav-open");
   });
 });
+
+//Sticky navigation.
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const observer = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+      //document.querySelector(".header").classList.add("sticky");
+    }
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    //In the viewport.
+    root: null,
+    threshold: 1,
+    rootMargin: "-80px",
+  }
+);
+observer.observe(sectionHeroEl);
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
